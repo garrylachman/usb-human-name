@@ -1,8 +1,5 @@
-project(usb_human_name)
-
-set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
-
-
+cmake_minimum_required(VERSION 3.16)
+project(usb_human_name CXX)
 
 set(HEADER_FILES
         library.h
@@ -12,10 +9,10 @@ set(SOURCE_FILES
         library.cpp
         )
 
-add_library(usb_human_name STATIC ${SOURCE_FILES} ${HEADER_FILES})
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
-set_target_properties(usb_human_name
-        PROPERTIES
-        VERSION ${PROJECT_VERSION}
-        SOVERSION ${PROJECT_VERSION}
-        )
+
+add_library(usb_human_name SHARED STATIC ${SOURCE_FILES} ${HEADER_FILES})
+
+install(TARGETS usb_human_name DESTINATION ${DIVISIBLE_INSTALL_LIB_DIR})
+install(FILES library.h DESTINATION ${DIVISIBLE_INSTALL_INCLUDE_DIR})
