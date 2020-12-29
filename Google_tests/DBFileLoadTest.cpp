@@ -26,7 +26,7 @@
 //----------------------------------------------------------------------------//
 
 #include "gtest/gtest.h"
-#include "library.h"
+#include "usb-human-name.h"
 
 USBHumanName usb("./data/usb.ids");
 

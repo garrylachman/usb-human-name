@@ -25,7 +25,7 @@
 //                                                                            //
 //----------------------------------------------------------------------------//
 
-#include "library.h"
+#include "usb-human-name.h"
 
 USBHumanName::USBHumanName(const string &dbFilePath)
         : dbFilePath(dbFilePath) {

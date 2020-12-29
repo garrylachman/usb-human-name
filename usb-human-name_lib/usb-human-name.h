@@ -25,8 +25,8 @@
 //                                                                            //
 //----------------------------------------------------------------------------//
 
-#ifndef USB_HUMAN_NAME_LIBRARY_H
-#define USB_HUMAN_NAME_LIBRARY_H
+#ifndef USB_HUMAN_NAME_USB_HUMAN_NAME_H
+#define USB_HUMAN_NAME_USB_HUMAN_NAME_H
 
 #include <iostream>
 #include <fstream>
@@ -86,4 +86,4 @@ class EXPORTED USBHumanName {
         vector<USBDeviceDesc> devices;
 };
 
-#endif //USB_HUMAN_NAME_LIBRARY_H
+#endif //USB_HUMAN_NAME_USB_HUMAN_NAME_H
