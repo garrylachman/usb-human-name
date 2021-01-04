@@ -62,7 +62,7 @@ jobs:
 
     - name: Zip output
       run: pwd & ls & zip -qq -r usb-human-name.zip lib include
-      working-directory: ${{runner.workspace}}
+      working-directory: ${{runner.workspace}}/usb-human-name
 
     - name: Create Release
       id: create_release
