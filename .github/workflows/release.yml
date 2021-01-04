@@ -61,7 +61,7 @@ jobs:
       uses: montudor/action-zip@v0.1.1
 
     - name: Zip output
-      run: zip -qq -r usb-human-name.zip lib include
+      run: pwd & ls & zip -qq -r usb-human-name.zip lib include
       working-directory: ${{runner.workspace}}
 
     - name: Create Release
