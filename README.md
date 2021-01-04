@@ -1,4 +1,5 @@
 ![CMake](https://github.com/garrylachman/usb-human-name/workflows/CMake/badge.svg)
+![Release](https://github.com/garrylachman/usb-human-name/workflows/Release/badge.svg)
 
 # USB Human Name
 ### Humanize USB vendor and product codes library
